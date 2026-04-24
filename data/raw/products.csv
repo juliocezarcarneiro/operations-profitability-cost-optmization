@@ -1,0 +1,29 @@
+product_id,product_name,category,subcategory,menu_price,standard_food_cost,portion_size_grams,vendor_id
+P001,Grilled Chicken Breast,Proteins,Chicken,14.99,4.8,180,V003
+P002,Beef Striploin,Proteins,Beef,18.99,6.9,200,V003
+P003,Salmon Fillet,Proteins,Fish,19.49,7.1,170,V003
+P004,Turkey Slices,Proteins,Turkey,13.99,4.2,160,V003
+P005,Tofu Cubes,Proteins,Plant,11.99,3.1,150,V001
+P006,Mixed Greens,Produce,Leafy,7.99,2.1,120,V004
+P007,Cherry Tomatoes,Produce,Tomatoes,6.99,1.8,100,V004
+P008,Avocado Slices,Produce,Avocado,8.99,2.9,90,V004
+P009,Roasted Vegetables,Produce,Hot Veg,7.49,2.2,140,V004
+P010,Fruit Cup,Produce,Fruit,5.99,1.95,130,V004
+P011,Bottled Water,Beverages,Cold,2.99,0.65,500,V002
+P012,Sparkling Water,Beverages,Cold,3.49,0.85,500,V002
+P013,Iced Tea,Beverages,Cold,3.99,0.95,450,V002
+P014,Coffee,Beverages,Hot,2.79,0.55,350,V002
+P015,Fresh Juice,Beverages,Cold,4.99,1.6,400,V004
+P016,French Fries,Sides,Potato,4.99,1.3,150,V001
+P017,Rice Pilaf,Sides,Rice,4.49,1.1,160,V001
+P018,Mashed Potatoes,Sides,Potato,4.79,1.25,170,V001
+P019,Mac and Cheese,Sides,Pasta,5.99,1.85,180,V001
+P020,Dinner Roll,Sides,Bakery,2.49,0.6,70,V001
+P021,Chocolate Brownie,Desserts,Baked,4.99,1.15,95,V001
+P022,Cheesecake Slice,Desserts,Cake,5.99,1.65,110,V001
+P023,Fruit Parfait,Desserts,Cold,5.49,1.4,120,V004
+P024,Cookie Pack,Desserts,Baked,3.99,0.95,80,V001
+P025,Takeout Container,Disposables,Packaging,0.5,0.18,1,V005
+P026,Drink Lid,Disposables,Packaging,0.2,0.05,1,V005
+P027,Napkin Pack,Disposables,Supplies,0.15,0.03,1,V005
+P028,Cutlery Set,Disposables,Supplies,0.35,0.09,1,V005

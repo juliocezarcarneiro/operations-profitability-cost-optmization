@@ -1,0 +1,46 @@
+table_name,column_name,data_type,grain,description,example_value
+locations,location_id,string,location,Unique location identifier,LOC001
+locations,location_name,string,location,Store name,Toronto Downtown
+locations,city,string,location,Store city,Toronto
+locations,region,string,location,Store region,Ontario
+locations,store_format,string,location,Store format classification,Downtown
+locations,opening_year,integer,location,Store opening year,2018
+products,product_id,string,product,Unique product identifier,P001
+products,product_name,string,product,Product name,Grilled Chicken Breast
+products,category,string,product,Product category,Proteins
+products,subcategory,string,product,Product subcategory,Chicken
+products,menu_price,decimal,product,Standard menu selling price,14.99
+products,standard_food_cost,decimal,product,Standard product food cost,4.80
+products,portion_size_grams,integer,product,Typical portion size in grams,180
+products,vendor_id,string,product,Assigned primary vendor,V003
+vendor_prices,month,string,vendor-product-month,Month of vendor cost snapshot,2025-03
+vendor_prices,vendor_id,string,vendor-product-month,Vendor identifier,V003
+vendor_prices,product_id,string,vendor-product-month,Product identifier,P001
+vendor_prices,vendor_name,string,vendor-product-month,Vendor name,Prime Protein Partners
+vendor_prices,actual_unit_cost,decimal,vendor-product-month,Vendor actual unit cost for the month,5.26
+vendor_prices,prior_unit_cost,decimal,vendor-product-month,Previous month's unit cost,5.09
+vendor_prices,cost_change_pct,decimal,vendor-product-month,Percent change versus previous month,3.34
+sales,transaction_date,date,product-location-day,Daily transaction date,2025-03-14
+sales,month,string,product-location-day,Month bucket,2025-03
+sales,location_id,string,product-location-day,Location identifier,LOC001
+sales,product_id,string,product-location-day,Product identifier,P001
+sales,units_sold,integer,product-location-day,Units sold,28
+sales,revenue,decimal,product-location-day,Net sales revenue after discount,403.20
+sales,discount_amount,decimal,product-location-day,Discount value applied,12.60
+sales,avg_ticket,decimal,product-location-day,Average ticket estimate for the row context,18.90
+sales,transactions_count,integer,product-location-day,Estimated transaction count,21
+costs,month,string,product-location-month,Month bucket,2025-03
+costs,location_id,string,product-location-month,Location identifier,LOC001
+costs,product_id,string,product-location-month,Product identifier,P001
+costs,cogs,decimal,product-location-month,Cost of goods sold,"4,185.90"
+costs,labor_cost,decimal,product-location-month,Allocated labor cost,"1,502.44"
+costs,packaging_cost,decimal,product-location-month,Packaging and serving cost,245.10
+costs,overhead_allocated,decimal,product-location-month,Allocated overhead,918.56
+costs,total_cost,decimal,product-location-month,Total operating cost,"6,851.99"
+waste,month,string,product-location-month,Month bucket,2025-03
+waste,location_id,string,product-location-month,Location identifier,LOC006
+waste,product_id,string,product-location-month,Product identifier,P001
+waste,waste_units,integer,product-location-month,Wasted units for the month,34
+waste,waste_cost,decimal,product-location-month,Estimated waste cost,172.40
+waste,waste_reason,string,product-location-month,Main waste reason,Spoilage
+waste,recorded_by,string,product-location-month,Recorded by role,Kitchen Lead

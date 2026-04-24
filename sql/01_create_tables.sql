@@ -12,50 +12,51 @@ CREATE TABLE products (
     product_name VARCHAR(100),
     category VARCHAR(100),
     subcategory VARCHAR(100),
-    unit_cost NUMERIC(10,2),
-    unit_price NUMERIC(10,2),
-    supplier_name VARCHAR(100)
+    menu_price NUMERIC(10,2),
+    standard_food_cost NUMERIC(10,2),
+    portion_size_grams INT,
+    vendor_id VARCHAR(10)
+);
+
+CREATE TABLE vendor_prices (
+    month VARCHAR(7),
+    vendor_id VARCHAR(10),
+    product_id VARCHAR(10),
+    vendor_name VARCHAR(100),
+    actual_unit_cost NUMERIC(10,2),
+    prior_unit_cost NUMERIC(10,2),
+    cost_change_pct NUMERIC(10,2)
 );
 
 CREATE TABLE sales (
-    sale_id VARCHAR(20) PRIMARY KEY,
-    sale_date DATE,
+    transaction_date DATE,
+    month VARCHAR(7),
     location_id VARCHAR(10),
     product_id VARCHAR(10),
-    quantity_sold INT,
+    units_sold INT,
     revenue NUMERIC(12,2),
-    discount NUMERIC(10,2),
-    FOREIGN KEY (location_id) REFERENCES locations(location_id),
-    FOREIGN KEY (product_id) REFERENCES products(product_id)
+    discount_amount NUMERIC(10,2),
+    avg_ticket NUMERIC(10,2),
+    transactions_count INT
 );
 
-CREATE TABLE inventory (
-    inventory_id VARCHAR(20) PRIMARY KEY,
-    inventory_date DATE,
+CREATE TABLE costs (
+    month VARCHAR(7),
     location_id VARCHAR(10),
     product_id VARCHAR(10),
-    stock_on_hand INT,
-    waste_quantity INT,
-    spoilage_cost NUMERIC(12,2),
-    FOREIGN KEY (location_id) REFERENCES locations(location_id),
-    FOREIGN KEY (product_id) REFERENCES products(product_id)
-);
-
-CREATE TABLE labor (
-    labor_id VARCHAR(20) PRIMARY KEY,
-    labor_date DATE,
-    location_id VARCHAR(10),
-    labor_hours NUMERIC(10,2),
+    cogs NUMERIC(12,2),
     labor_cost NUMERIC(12,2),
-    overtime_hours NUMERIC(10,2),
-    FOREIGN KEY (location_id) REFERENCES locations(location_id)
+    packaging_cost NUMERIC(12,2),
+    overhead_allocated NUMERIC(12,2),
+    total_cost NUMERIC(12,2)
 );
 
-CREATE TABLE expenses (
-    expense_id VARCHAR(20) PRIMARY KEY,
-    expense_date DATE,
+CREATE TABLE waste (
+    month VARCHAR(7),
     location_id VARCHAR(10),
-    expense_type VARCHAR(100),
-    expense_amount NUMERIC(12,2),
-    FOREIGN KEY (location_id) REFERENCES locations(location_id)
+    product_id VARCHAR(10),
+    waste_units INT,
+    waste_cost NUMERIC(12,2),
+    waste_reason VARCHAR(100),
+    recorded_by VARCHAR(100)
 );

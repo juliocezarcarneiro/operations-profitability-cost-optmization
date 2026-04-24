@@ -1,0 +1,9 @@
+location_id,location_name,city,region,store_format,opening_year
+LOC001,Toronto Downtown,Toronto,Ontario,Downtown,2018
+LOC002,North York,Toronto,Ontario,Urban,2019
+LOC003,Scarborough,Toronto,Ontario,Urban,2020
+LOC004,Mississauga,Mississauga,Ontario,Suburban,2017
+LOC005,Vaughan,Vaughan,Ontario,Suburban,2021
+LOC006,Hamilton,Hamilton,Ontario,Suburban,2022
+LOC007,Ottawa,Ottawa,Ontario,Urban,2018
+LOC008,London,London,Ontario,Suburban,2023
