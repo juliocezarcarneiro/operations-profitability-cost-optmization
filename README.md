@@ -77,9 +77,9 @@ operations-profitability-cost-optimization/
 │   ├── 00_data_validation_checks.sql
 │   ├── 01_create_tables.sql
 │   ├── 02_validation_outputs.sql
-│   ├── 02_monthly_profitability.sql
-│   ├── 03_location_performance.sql
-│   └── 04_mom_cost_growth.sql
+│   ├── 03_monthly_profitability.sql
+│   ├── 04_location_performance.sql
+│   └── 05_mom_cost_growth.sql
 │
 ├── notebooks/
 │   └── 01_data_validation.ipynb
@@ -90,7 +90,7 @@ operations-profitability-cost-optimization/
 │       └── dashboard_final.csv
 │
 ├── outputs/
-│   ├── validation_results_final.csv
+│   ├── validation_results.csv
 │   ├── monthly_profitability.csv
 │   ├── location_performance.csv
 │   └── mom_cost_growth.csv
